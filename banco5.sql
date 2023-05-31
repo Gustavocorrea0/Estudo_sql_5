@@ -256,36 +256,36 @@ insert into estado(id, nome, uf)
 insert into cidade(nome, estado_fk,codigo_ibge)
 	values('Terra Boa', 1, 4127205);
 insert into cidade(nome, estado_fk,codigo_ibge)
-	values('Terra Boa', 1, 4127205);
+	values('Cianorte', 1, 4105508);
 insert into cidade(nome, estado_fk,codigo_ibge)
-	values('Terra Boa', 1, 4127205);
+	values('Maringa', 1, 4115200);
 insert into cidade(nome, estado_fk,codigo_ibge)
-	values('Terra Boa', 1, 4127205);
+	values('Jussara', 1, 4113007);
 insert into cidade(nome, estado_fk,codigo_ibge)
-	values('Terra Boa', 1, 4127205);
+	values('Japura', 1, 4112405);
 insert into cidade(nome, estado_fk,codigo_ibge)
-	values('Terra Boa', 1, 4127205);
+	values('Indianopolis', 1, 4110409);
 insert into cidade(nome, estado_fk,codigo_ibge)
-	values('Terra Boa', 1, 4127205);
+	values('Campo Mourao', 1, 4104303);
 	
 -----------------------------| Query Tool 2|-------------------------------------------------------------
 
 insert into cidade(nome, estado_fk,codigo_ibge)
-	values('Terra Boa', 1, 4127205);
+	values('Curitiba', 1, 4106902);
 insert into cidade(nome, estado_fk,codigo_ibge)
-	values('Terra Boa', 1, 4127205);
+	values('Foz do Iguaçu', 1, 4108304);
 insert into cidade(nome, estado_fk,codigo_ibge)
-	values('Terra Boa', 1, 4127205);
+	values('Engenheiro Beltrão', 1, 4107504);
 insert into cidade(nome, estado_fk,codigo_ibge)
-	values('Terra Boa', 1, 4127205);
+	values('Dr Camargo', 1, 4107306);
 insert into cidade(nome, estado_fk,codigo_ibge)
-	values('Terra Boa', 1, 4127205)
+	values('Ivaiporã', 1, 4111506)
 insert into cidade(nome, estado_fk,codigo_ibge)
-	values('Terra Boa', 1, 4127205);
+	values('Araruna', 1, 4101705);
 insert into cidade(nome, estado_fk,codigo_ibge)
-	values('Terra Boa', 1, 4127205);
+	values('Umuarama', 1, 4128104);
 insert into cidade(nome, estado_fk,codigo_ibge)
-	values('Terra Boa', 1, 4127205);
+	values('Tapejara', 1, 4126801);
 
 
 
