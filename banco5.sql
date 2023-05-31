@@ -213,8 +213,8 @@ insert into produto(nome, modelo, unidade_medida, codigo)
 	values ('Bmw 320i','2019','212', 2);
 insert into produto(nome, modelo, unidade_medida, codigo)
 	values ('uno','mille','554', 3);
------------------------------| (TERMINAR)4 - Exibir valor atual|----------------------------------------
-create view seq_produto_id as select id from produto;
+-----------------------------|4 - Exibir valor atual|----------------------------------------
+select currval('seq_produto_id');
 -----------------------------| 5 - Criar sequencia 2 em 2|----------------------------------------------
 create sequence seq_pessoa_id start with 2 increment by 2;
 -----------------------------| 6 - Alter tabela pessoa|-------------------------------------------------
@@ -228,16 +228,24 @@ insert into pessoa(codigo, nome_completo, tipo, telefone, email, nome_contato)
 alter sequence seq_produto_id increment by 100;
 -----------------------------| 9 - Começar sequencia em 4|----------------------------------------------
 alter sequence seq_pessoa_id increment by 4;
------------------------------| 10 - |-------------------------------------------------------------------
------------------------------| 11 - |-------------------------------------------------------------------
------------------------------| 12 - |-------------------------------------------------------------------
------------------------------| 13 - |-------------------------------------------------------------------
------------------------------| 14 - |-------------------------------------------------------------------
------------------------------| 15 - |-------------------------------------------------------------------
-
-
-
-
-
-
-
+-----------------------------| 10 - Remover e Rever|----------------------------------------------------
+delete from pessoa where id = 2;
+select lastval(); -- 4
+-----------------------------| 11 - Começa em 100 e diminui 1|------------------------------------------
+create sequence seq_decrescente_id start with 100 increment by -1 minvalue 0 maxvalue 100 cache 1;
+-----------------------------| 12 - Criar tabela decrescente|-------------------------------------------
+create table decrescente(
+	id_decrescente int not null primary key,
+	valor varchar(10) not null
+);
+alter table decrescente alter column id_decrescente set default nextval('seq_decrescente_id');
+-----------------------------| 13 - Inserir Valores em decrescente|-------------------------------------
+do $$
+	begin for i in 100..0 loop
+	insert into decrecente(valor)
+		values(contador, 'Valor ' || i);
+	end loop;
+end $$;
+-----------------------------| 14 - Sequencia cidade|---------------------------------------------------
+create sequence seq_cidade_id cache 5;
+alter table cidade alter column id set default nextval('seq_cidade_id');
