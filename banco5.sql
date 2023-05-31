@@ -246,6 +246,49 @@ do $$
 		values(contador, 'Valor ' || i);
 	end loop;
 end $$;
------------------------------| 14 - Sequencia cidade|---------------------------------------------------
+-----------------------------| 14 - Sequencia cidade|----------------------------------------------------
 create sequence seq_cidade_id cache 5;
 alter table cidade alter column id set default nextval('seq_cidade_id');
+-----------------------------| 15 - Cidades|-------------------------------------------------------------
+insert into estado(id, nome, uf)
+	values(1, 'parana','pr');
+-----------------------------| Query Tool 1|-------------------------------------------------------------	
+insert into cidade(nome, estado_fk,codigo_ibge)
+	values('Terra Boa', 1, 4127205);
+insert into cidade(nome, estado_fk,codigo_ibge)
+	values('Terra Boa', 1, 4127205);
+insert into cidade(nome, estado_fk,codigo_ibge)
+	values('Terra Boa', 1, 4127205);
+insert into cidade(nome, estado_fk,codigo_ibge)
+	values('Terra Boa', 1, 4127205);
+insert into cidade(nome, estado_fk,codigo_ibge)
+	values('Terra Boa', 1, 4127205);
+insert into cidade(nome, estado_fk,codigo_ibge)
+	values('Terra Boa', 1, 4127205);
+insert into cidade(nome, estado_fk,codigo_ibge)
+	values('Terra Boa', 1, 4127205);
+	
+-----------------------------| Query Tool 2|-------------------------------------------------------------
+
+insert into cidade(nome, estado_fk,codigo_ibge)
+	values('Terra Boa', 1, 4127205);
+insert into cidade(nome, estado_fk,codigo_ibge)
+	values('Terra Boa', 1, 4127205);
+insert into cidade(nome, estado_fk,codigo_ibge)
+	values('Terra Boa', 1, 4127205);
+insert into cidade(nome, estado_fk,codigo_ibge)
+	values('Terra Boa', 1, 4127205);
+insert into cidade(nome, estado_fk,codigo_ibge)
+	values('Terra Boa', 1, 4127205)
+insert into cidade(nome, estado_fk,codigo_ibge)
+	values('Terra Boa', 1, 4127205);
+insert into cidade(nome, estado_fk,codigo_ibge)
+	values('Terra Boa', 1, 4127205);
+insert into cidade(nome, estado_fk,codigo_ibge)
+	values('Terra Boa', 1, 4127205);
+
+
+
+
+
+
